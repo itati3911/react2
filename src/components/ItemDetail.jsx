@@ -1,9 +1,11 @@
 import React from "react"
 import { Card, Button } from 'react-bootstrap';
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
+import {useState} from "react";
 
 export default function ItemDetail({ item }) {
-
+    const [itemCount, setItemCount] = useState(0);
     const onAdd = (count) => {
         alert(`Tu total de productos es ${count}`);
       }
@@ -25,7 +27,10 @@ export default function ItemDetail({ item }) {
 
                     <Button variant="outline-primary" style={{textDecoration:"none"}}>Ampliar info</Button>
                 </Card.Body>
-                <ItemCount inicial={1} max={10} onAdd={onAdd}/>
+                {itemCount === 0
+                ?<ItemCount inicial={itemCount} max={10} onAdd={onAdd}/>
+                : <Link to='/cart' style={{textDecoration: "none"}}><Button variant="contained" color="secondary">CheckOut</Button></Link>
+                }
             </Card>
         </div>
     )
