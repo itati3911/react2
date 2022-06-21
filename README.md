@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # react2
-este es un repo accesorio del proyecto
+ESTE ES EL REPO OFICIAL POST PRIMERA PREENTREGA DE DESAFIOS REACT
 =======
 # Getting Started with Create React App
 
