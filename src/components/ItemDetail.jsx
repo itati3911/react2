@@ -6,8 +6,13 @@ import {useState} from "react";
 
 export default function ItemDetail({ item }) {
     const [itemCount, setItemCount] = useState(0);
-    const onAdd = (count) => {
-        alert(`Tu total de productos es ${count}`);
+
+    const onAdd = (qty) => {
+        alert("You have selected " + qty + " items.");
+        setItemCount(qty);
+    
+
+    
       }
       
     return (
@@ -21,15 +26,17 @@ export default function ItemDetail({ item }) {
                         Description: {item.description}
                         <br />
                         Price: ${item.cost}
+
                         <br />
+                        Stock= {item.stock}
                         <br />
                     </Card.Text>
 
                     <Button variant="outline-primary" style={{textDecoration:"none"}}>Ampliar info</Button>
                 </Card.Body>
                 {itemCount === 0
-                ?<ItemCount inicial={itemCount} max={10} onAdd={onAdd}/>
-                : <Link to='/cart' style={{textDecoration: "none"}}><Button variant="contained" color="secondary">CheckOut</Button></Link>
+                ?<ItemCount stock ={item.stock} inicial={itemCount}  onAdd={onAdd}/>
+                : <Link to='/cart' style={{textDecoration: "none"}}><Button variant="outline-primary" color="secondary">CheckOut</Button></Link>
                 }
             </Card>
         </div>

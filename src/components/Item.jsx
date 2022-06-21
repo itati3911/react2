@@ -7,7 +7,8 @@ export default function Item ({id, title, price, image}) {
         <div>
             <Card style={{ width: '15rem' , margin:"20"}}>
   
-    
+            <Card.Img variant="top" src={image} />
+
   <Card.Body>
     <Card.Title>{title}</Card.Title>
      <Card.Text>
