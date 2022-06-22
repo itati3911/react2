@@ -10,7 +10,7 @@ function BsNavBar() {
   <div className="container-fluid">
     <Link to ="/"><img src="https://freesvg.org/storage/img/thumb/elephant-circle-colour.png" alt="logo" /></Link>
     <Link to ="/" style= {{textDecoration: "none"}} className="navbar-brand nav-link">
-    Hathi Shop
+    Hathi Drink Shop
     </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -26,10 +26,14 @@ function BsNavBar() {
         <li className="nav-item">
         <Link to='/category/5' style={{textDecoration: "none", color: "white"}} className="nav-link active" aria-current="page">LIQUORS</Link>
         </li>
+        <li className="nav-item">
+        <Link to='/category/600' style={{textDecoration: "none", color: "white"}} className="nav-link active" aria-current="page">GIN</Link>
+        </li>
       </ul>
-      <div className="cart">
+      <Link to='/cart' style={{textDecoration: "none", color: "white"}} className="nav-link active">
+<div className="cart">
       <CartWidget items={0} />
-    </div>
+    </div></Link>
     </div>
   </div>
 </nav> 

@@ -5,7 +5,7 @@ export default function Cart() {
     return(
     
     <div>
-        soy el carrito
+        <strong>soy el carrito 0_0</strong>
     </div>
     )
 }

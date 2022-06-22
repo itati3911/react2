@@ -1,15 +1,22 @@
 import React from "react"
 import { Card, Button } from 'react-bootstrap';
-import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
-import {useState} from "react";
+import {useState, useContext} from "react";
+import { CartContext } from "../CartContext";
+import ItemCount from "./ItemCount"
 
 export default function ItemDetail({ item }) {
-    const [itemCount, setItemCount] = useState(0);
+    //const [itemCount, setItemCount] = useState(0);
+
+    const [qty, setQty] = useState(1);
+
+    const {isInCart, addItem} = useContext (CartContext);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
-        setItemCount(qty);
+        isInCart(item.id);
+        addItem(item, qty);
+        setQty(qty);
     
 
     
@@ -34,9 +41,9 @@ export default function ItemDetail({ item }) {
 
                     <Button variant="outline-primary" style={{textDecoration:"none"}}>Ampliar info</Button>
                 </Card.Body>
-                {itemCount === 0
-                ?<ItemCount stock ={item.stock} inicial={itemCount}  onAdd={onAdd}/>
-                : <Link to='/cart' style={{textDecoration: "none"}}><Button variant="outline-primary" color="secondary">CheckOut</Button></Link>
+                {qty === 1
+                ?<ItemCount stock ={item.stock} inicial={qty}  onAdd={onAdd}/>
+                : <Link to ='/cart' style={{textDecoration: "none"}}><Button variant="outline-primary" color="secondary">CheckOut</Button></Link>
                 }
             </Card>
         </div>
