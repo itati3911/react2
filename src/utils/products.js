@@ -272,7 +272,7 @@ const products = [
     stock: 10,
     cost: 4000,
     description: "Bombay Sapphire has a unique distillation process: There are only four Carterhead stills working in the world today and are distinctive to Bombay Sapphire",
-    
+
     capacity: 700,
     image: [
       "https://d1osgs5rdqb11o.cloudfront.net/products/main/244/244.thm350.jpg"
