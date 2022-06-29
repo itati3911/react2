@@ -34,7 +34,7 @@ export default function ItemDetail({ item }) {
                     <Card.Text>
                         About this item: {item.description}
                         <br />
-                        Price: ${item.cost}
+                        Price: ${item.price}
 
                         <br />
                         Stock: {item.stock}

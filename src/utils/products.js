@@ -1,4 +1,4 @@
-const products = [
+/* const products = [
   {
     id: 30,
     name: "Agua Con Gas 1,5 lts",
@@ -262,6 +262,7 @@ const products = [
     },
     brand: {
       id: 17,
+      
       name: "Amareto Disaronno"
     },
     reviews: []
@@ -297,4 +298,4 @@ const products = [
 
 module.exports = {
   products,
-}
+} */

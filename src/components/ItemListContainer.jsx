@@ -1,34 +1,126 @@
+//@ts-check
 import React, { useEffect, useState } from "react"
-import customFetch from "../utils/customFetch";
 import ItemList from "./ItemList";
 import { useParams } from "react-router";
+import {collection, getDocs, getFirestore, query, where} from "firebase/firestore"
 
 
-const { products } = require("../utils/products");
 
 
 const ItemListContainer = () => {
-    const [datos, setDatos] = useState([]);
-    const { idCategory } = useParams();
+    
+    const [result, setResult] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState (false)
+    const {id} = useParams();
+
+useEffect(() => {
+
+    const db = getFirestore();
+    const itemsCollection = collection(db,"items");
+    
+    
+    if (id) {
+        const q = query(itemsCollection, where ("category", "==", id));
+        getDocs(q)
+        .then((snapshot) => {
+            setResult(
+                snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id})));
+        })
+        .catch((error) => {
+            setError(error);
+        })
+        .finally(() => {
+            setLoading(false);
+        });
+    }else {
+        getDocs(itemsCollection)
+        .then((snapshot) =>{
+            setResult(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id})));
+        })
+        .catch((error) => {
+            setError(error);
+        })
+        .finally(() => {
+            setLoading(false);
+        });
+
+    }
+},[id])
 
 
-
-    useEffect(() => {
-        customFetch(500, products.filter(item => {
-            if (idCategory === undefined) return item;
-            return item.categoryId === parseInt(idCategory)
-        }))
-            .then(result => setDatos(result))
-            .catch(err => console.log(err))
-    }, [datos]);
-
-
+        
     return (
         <>
-            <ItemList items={datos} />
+        <ItemList items={result} /> 
         </>
 
     );
 }
 
 export default ItemListContainer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

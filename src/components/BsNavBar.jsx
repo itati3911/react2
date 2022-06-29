@@ -18,16 +18,16 @@ function BsNavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to='/category/9' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">NO ALCOHOL</Link>
+              <Link to='/category/noalcohol' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">NO ALCOHOL</Link>
             </li>
             <li className="nav-item">
-              <Link to='/category/1' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">WINES</Link>
+              <Link to='/category/wine' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">WINES</Link>
             </li>
             <li className="nav-item">
-              <Link to='/category/5' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">LIQUORS</Link>
+              <Link to='/category/liquor' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">LIQUORS</Link>
             </li>
             <li className="nav-item">
-              <Link to='/category/600' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">GIN</Link>
+              <Link to='/category/gin' style={{ textDecoration: "none", color: "white" }} className="nav-link active" aria-current="page">GIN</Link>
             </li>
           </ul>
           <Link to='/cart' style={{ textDecoration: "none", color: "white" }} className="nav-link active">

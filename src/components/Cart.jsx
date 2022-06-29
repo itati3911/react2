@@ -35,7 +35,7 @@ export default function Cart() {
                                 <Card.Body>
                                     <Card.Title>{item.name}</Card.Title>
                                     <Card.Text>{item.qty} item(s)</Card.Text>
-                                    <Card.Text>Price: $ {item.cost} each</Card.Text>
+                                    <Card.Text>Price: $ {item.price} each</Card.Text>
                                     <Card.Text>Subtotal items cost $ {test.calcTotalPerItem(item.id)}</Card.Text>
                                     <Button variant="primary" type="filled" onClick={() => test.deleteItem(item.id)}>DELETE</Button>
                                 </Card.Body>

@@ -58,7 +58,7 @@ export const MyProvider = ({ children }) => {
     //CALCULOS
     const calcTotalPerItem = (id) => {
         let index = cart.map(item => item.id).indexOf(id);
-        return cart[index].cost * cart[index].qty;
+        return cart[index].price * cart[index].qty;
     }
 
     const calcSubTotal = () => {
