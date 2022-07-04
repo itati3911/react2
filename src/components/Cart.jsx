@@ -63,7 +63,7 @@ export default function Cart() {
                         <h3>Total</h3>
                         <div><FormatNumber number={test.calcTotal()} /></div>
                     </div>
-                    <button>PROCEED TO CHECKOUT</button>
+                    <Link to='/checkout'><button>PROCEED TO CHECKOUT</button></Link>
                 </div>
             }
 
