@@ -1,4 +1,5 @@
-import React, {useState, useContext} from "react"
+import React, {useState, useContext} from "react";
+import { Button } from 'react-bootstrap';
 import { CartContext } from "../context/CartContext";
 import {addDoc, collection, getFirestore} from "firebase/firestore";
 import {Link} from "react-router-dom";
@@ -108,8 +109,8 @@ export default function Checkout()  {
             {validation.cel ? <p>The cellphone number is valid</p> : cel == "" ? "" : <p>Please enter your cellphone number</p>}
 
             <br/>
-            <button onClick={()=> handleClick()}>Finish your purchase</button>
-            <Link to="/"><button>Return to home</button></Link>
+            <Button variant="outline-danger" onClick={()=> handleClick()}>Finish your purchase</Button>
+            <Link to="/"><Button variant="outline-danger">Return to home</Button></Link>
         </div>
     )
 }

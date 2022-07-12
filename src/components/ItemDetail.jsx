@@ -1,9 +1,10 @@
 import React from "react"
-import { Card, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
+import "../style/ItemDetail.css"
 
 
 
@@ -20,35 +21,29 @@ export default function ItemDetail({ item }) {
         addItem(item, qty);
         setQty(qty);
 
-
-
     }
 
     return (
-        <div className="mostrador">
-            <Card border="secondary" style={{ width: '15rem', margin: "20" }}>
-                <Card.Img variant="top" src={item.image} />
 
-                <Card.Body>
-                    <Card.Title><strong>{item.name}</strong></Card.Title>
-                    <Card.Text>
-                        About this item: {item.description}
-                        <br />
-                        Price: ${item.price}
+        <div className="item-det">
+            <div className="item-det2">
+                <img className="item-det3" src={item.image} alt="imagepr"/>
+            </div>
+        <div className="item-det4">
+            <h1><strong>{item.name}</strong></h1>
+            <h6>{item.description}</h6>
+            <h6> Stock: {item.stock}</h6>
+            <h4>$ {item.price}</h4>
+            <div>
 
-                        <br />
-                        Stock: {item.stock}
-                        <br />
-                    </Card.Text>
-
-                    <Button variant="outline-primary" style={{ textDecoration: "none" }}>More info</Button>
-                </Card.Body>
-                {qty === 1
+            {qty === 1
                     ? <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
-                    : <Link to='/cart' style={{ textDecoration: "none" }}><Button variant="outline-primary" color="secondary">CheckOut</Button></Link>
+                    : <Link to='/cart' style={{ textDecoration: "none" }}><Button variant="outline-secondary" color="danger">CheckOut</Button></Link>
                 }
-            </Card>
+            </div>
         </div>
+    </div>
     )
 }
+
 
