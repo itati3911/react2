@@ -23,3 +23,24 @@
   color: #61dafb;
 }
 
+/* .containerList{
+  display: grid;
+  gap: 1rem;
+  margin: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat (auto-fill, minmax(min(100%,15rem),1fr));
+  text-align:center;
+}  */
+
+/* .impFinal{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+} */
+
+.littleCart{
+  text-decoration: none;
+  color: white;
+  align-items: baseline;
+}

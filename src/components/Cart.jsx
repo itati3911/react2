@@ -1,7 +1,7 @@
 import React from "react"
 import { Card, Button } from 'react-bootstrap';
 import { useContext } from "react"
-import { CartContext } from "../CartContext"
+import { CartContext } from "../context/CartContext"
 import { Link } from "react-router-dom"
 import FormatNumber from "../utils/FormatNumber";
 

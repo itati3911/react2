@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react"
 import ItemList from "./ItemList";
 import { useParams } from "react-router";
-import {collection, getDocs, getFirestore, query, where} from "firebase/firestore"
+import {collection, getDocs, getFirestore, query, where} from "firebase/firestore";
+import "../style/ItemListContainer.css";
+import {Spinner} from "react-bootstrap"
 
 
 
@@ -48,12 +50,18 @@ useEffect(() => {
     }
 },[id])
 
-
+if (loading) {
+    return <div className="spinning">  <img src="https://i.gifer.com/F7D.gif"/>
+    </div>;
+}
         
     return (
-        <>
+        
+        
+        <div className="containerList">
         <ItemList items={result} /> 
-        </>
+        </div>
+        
 
     );
 }

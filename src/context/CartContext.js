@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 export const CartContext = createContext();
 
 
@@ -6,7 +6,7 @@ export const CartContext = createContext();
 const { Provider } = CartContext;
 
 export const MyProvider = ({ children }) => {
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([])
 
     //METODO SOME, EN ITEM DETAIL, BOLEANO, DETECTA SI EL PROD YA ESTA EN EL CART
     const isInCart = (id) => {
@@ -17,9 +17,9 @@ export const MyProvider = ({ children }) => {
 
 
     const addItem = (item, qty) => {
-        const newItem = { ...item, qty };
+        const newItem = { ...item, qty};
 
-        console.log(newItem)
+        //console.log(newItem)
 
         if (isInCart(newItem.id)) {
             const findProduct = cart.find(item => item.id === newItem.id);
@@ -27,9 +27,11 @@ export const MyProvider = ({ children }) => {
             const auxArray = [...cart];
             auxArray[productIndex].qty += qty;
             setCart(auxArray);
+            window.localStorage.setItem(item, JSON.stringify(auxArray[productIndex]));
 
         } else {
             setCart([...cart, newItem]);
+            window.localStorage.setItem(item,JSON.stringify(newItem))
         }
     }
 
