@@ -27,22 +27,30 @@ export default function ItemDetail({ item }) {
 
         <div className="item-det">
             <div className="item-det2">
-                <img className="item-det3" src={item.image} alt="imagepr"/>
+                <img className="item-det3" src={item.image} alt="imagepr" />
             </div>
-        <div className="item-det4">
-            <h1><strong>{item.name}</strong></h1>
-            <h6>{item.description}</h6>
-            <h6> Stock: {item.stock}</h6>
-            <h4>$ {item.price}</h4>
-            <div>
+            <div className="item-det4">
+                <h1><strong>{item.name}</strong></h1>
+                <h6>{item.description}</h6>
+                <h6> Stock: {item.stock}</h6>
+                <h4>$ {item.price}</h4>
+                <div>
 
-            {qty === 1
-                    ? <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
-                    : <Link to='/cart' style={{ textDecoration: "none" }}><Button variant="outline-secondary" color="danger">CheckOut</Button></Link>
-                }
+                    {qty === 1
+                        ? 
+                        <>
+                        <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
+                        <Link to='/'><Button variant="outline-secondary" color="danger">CONTINUE SHOPPING</Button></Link>
+                        </>
+                        :
+                        <>
+                            <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
+                            <Link to='/'><Button variant="outline-secondary" color="danger">CONTINUE SHOPPING</Button></Link>
+                            <Link to='/cart' style={{ textDecoration: "none" }}><Button variant="outline-secondary" color="danger">CheckOut</Button></Link></>
+                    }
+                </div>
             </div>
         </div>
-    </div>
     )
 }
 

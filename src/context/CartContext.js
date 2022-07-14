@@ -17,9 +17,9 @@ export const MyProvider = ({ children }) => {
 
 
     const addItem = (item, qty) => {
-        const newItem = { ...item, qty};
+        const newItem = { ...item, qty };
 
-        //console.log(newItem)
+
 
         if (isInCart(newItem.id)) {
             const findProduct = cart.find(item => item.id === newItem.id);
@@ -31,7 +31,7 @@ export const MyProvider = ({ children }) => {
 
         } else {
             setCart([...cart, newItem]);
-            window.localStorage.setItem(item,JSON.stringify(newItem))
+            window.localStorage.setItem(item, JSON.stringify(newItem))
         }
     }
 

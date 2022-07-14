@@ -109,8 +109,8 @@ export default function Checkout()  {
             {validation.cel ? <p>The cellphone number is valid</p> : cel == "" ? "" : <p>Please enter your cellphone number</p>}
 
             <br/>
-            <Button variant="outline-danger" onClick={()=> handleClick()}>Finish your purchase</Button>
-            <Link to="/"><Button variant="outline-danger">Return to home</Button></Link>
+            <Button variant="outline-secondary" color="danger" onClick={()=> handleClick()}>Finish your purchase</Button>
+            <Link to="/"><Button variant="outline-secondary" color="danger">Return to home</Button></Link>
         </div>
     )
 }

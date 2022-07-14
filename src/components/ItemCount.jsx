@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
+import {Button} from "react-bootstrap";
 
 
 const Qty = ({ stock = 0, initial = 1, onAdd }) => {
@@ -22,17 +23,17 @@ const Qty = ({ stock = 0, initial = 1, onAdd }) => {
 
     return (
         <>
+            
             <div className="mostrador">
-                <h2>{qty}</h2>
+                <Button variant="outline-secondary" color="danger" onClick={increment}>+</Button>
+                {qty}         
+                <Button variant="outline-secondary" color="danger" onClick={decrement}>-</Button>
             </div>
-            <div className="mostrador">
-                <button onClick={increment}>+</button>
-                <button onClick={decrement}>-</button>
-            </div>
+            <br/>
             {
                 stock && qty
-                    ? <button onClick={() => { onAdd(qty) }}>Add to cart</button>
-                    : <button disabled>No stock available</button>
+                    ? <Button variant="outline-secondary" color="danger" onClick={() => { onAdd(qty) }}>Add to cart</Button>
+                    : <Button variant="outline-secondary" color="danger" disabled>No stock available</Button>
             }
         </>
 

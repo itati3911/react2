@@ -1,14 +1,14 @@
-import React from "react";
-import "../style/soon.css";
+import "../style/Soon.css";
+import {Link} from "react-router-dom";
 
 export default function Soon(){
     return(
-        <div class="hero-image">
-  <div class="hero-text">
-    <h1>I am John Doe</h1>
-    <p>And I'm a Photographer</p>
-    <button>Hire me</button>
+        <div className="hero-image">
+  <div className="hero-text">
+    <h1>Coming soon...</h1>
+    
+    <Link to="/"className="return-soon">Return to home</Link>
   </div>
 </div> 
     )
-}
+} 

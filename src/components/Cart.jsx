@@ -4,6 +4,7 @@ import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 import { Link } from "react-router-dom"
 import FormatNumber from "../utils/FormatNumber";
+import "../style/Cart.css"
 
 
 
@@ -14,14 +15,20 @@ export default function Cart() {
     return (
 
         <>
-            <h1>ADDED TO CART</h1>
-            <div>
-                <Link to='/'><button>CONTINUE SHOPPING</button></Link>
+            <div className="cart-empty">
+            <h1>YOUR CART</h1>
+            <br/>
+            <br/>
+            
                 {
                     (test.cart.length > 0)
-                        ? <button type="filled" onClick={test.emptyCart}>DELETE ALL PRODUCTS</button>
-                        : <h2>Your cart is empty</h2>
+                    ? <Button variant="outline-secondary" color="danger" type="filled" onClick={test.emptyCart}>DELETE ALL PRODUCTS</Button>
+                    : <h2>Is empty!!! Let´s fix this...</h2>
+                    
                 }
+                
+                <Link to='/'><Button variant="outline-secondary" color="danger">CONTINUE SHOPPING</Button></Link>
+            
             </div>
 
             <div>
@@ -37,7 +44,7 @@ export default function Cart() {
                                     <Card.Text>{item.qty} item(s)</Card.Text>
                                     <Card.Text>Price: $ {item.price} each</Card.Text>
                                     <Card.Text>Subtotal items cost $ {test.calcTotalPerItem(item.id)}</Card.Text>
-                                    <Button variant="primary" type="filled" onClick={() => test.deleteItem(item.id)}>DELETE</Button>
+                                    <Button Button variant="outline-secondary" color="danger" onClick={() => test.deleteItem(item.id)}>DELETE</Button>
                                 </Card.Body>
                             </Card>
 
@@ -63,7 +70,7 @@ export default function Cart() {
                         <h3>Total</h3>
                         <div><FormatNumber number={test.calcTotal()} /></div>
                     </div>
-                    <Link to='/checkout'><button>PROCEED TO CHECKOUT</button></Link>
+                    <Link to='/checkout'><Button variant="outline-secondary" color="danger">PROCEED TO CHECKOUT</Button></Link>
                 </div>
             }
 

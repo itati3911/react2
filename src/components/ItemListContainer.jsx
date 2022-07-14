@@ -4,7 +4,6 @@ import ItemList from "./ItemList";
 import { useParams } from "react-router";
 import {collection, getDocs, getFirestore, query, where} from "firebase/firestore";
 import "../style/ItemListContainer.css";
-import {Spinner} from "react-bootstrap"
 
 
 
