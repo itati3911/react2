@@ -29,12 +29,13 @@ function NavBar() {
                 <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/wine'>WINES</NavDropdown.Item>
                 <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/liquor'>LIQUORS</NavDropdown.Item>
                 <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/gin'>GIN</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/vodka'>VODKA</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to="/barware">Barware</Nav.Link>
-              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to="/gifts">Gifts</Nav.Link>
-              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to="/offers">Offers</Nav.Link>
-              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to="/about">About us</Nav.Link>
-              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to="/contact">Contact</Nav.Link> 
+              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to='/soon'>Barware</Nav.Link>
+              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to='/soon'>Gifts</Nav.Link>
+              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to='/soon'>Offers</Nav.Link>
+              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to='/soon'>About us</Nav.Link>
+              <Nav.Link className = "nav-linky" onClick={() => setExpanded(false)} as={Link} to='/soon'>Contact</Nav.Link> 
             </Nav>
           </Navbar.Collapse>
           <Link to='/cart'>
