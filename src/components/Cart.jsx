@@ -23,7 +23,8 @@ export default function Cart() {
                 {
                     (test.cart.length > 0)
                     ? <Button variant="outline-secondary" color="danger" type="filled" onClick={test.emptyCart}>DELETE ALL PRODUCTS</Button>
-                    : <h2>Is empty!!! Let´s fix this...</h2>
+                    : 
+                    <h2>Is empty!!! Let´s fix this...</h2>
                     
                 }
                 
