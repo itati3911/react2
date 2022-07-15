@@ -39,7 +39,7 @@ function NavBar() {
             </Nav>
           </Navbar.Collapse>
           <Link to='/cart'>
-          <CartWidget items={0}/>
+          <CartWidget style={{ textDecoration: "none" }} items={0}/>
           </Link>
         </Container>
       </Navbar>

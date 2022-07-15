@@ -24,15 +24,15 @@ const Qty = ({ stock = 0, initial = 1, onAdd }) => {
     return (
         <>
             
-            <div className="mostrador">
-                <Button variant="outline-secondary" color="danger" onClick={increment}>+</Button>
+            <div>
+                <Button style={{ margin: "10px" }} size="sm" variant="outline-secondary" color="danger" onClick={increment}>+</Button>
                 {qty}         
-                <Button variant="outline-secondary" color="danger" onClick={decrement}>-</Button>
+                <Button style={{ margin: "10px" }} size="sm" variant="outline-secondary" color="danger" onClick={decrement}>-</Button>
             </div>
             <br/>
             {
                 stock && qty
-                    ? <Button variant="outline-secondary" color="danger" onClick={() => { onAdd(qty) }}>Add to cart</Button>
+                    ? <Button style={{ margin: "10px" }} variant="outline-secondary" color="danger" onClick={() => { onAdd(qty) }}>Add to cart</Button>
                     : <Button variant="outline-secondary" color="danger" disabled>No stock available</Button>
             }
         </>

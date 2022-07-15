@@ -45,8 +45,8 @@ export default function ItemDetail({ item }) {
                         :
                         <>
                             <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
-                            <Link to='/'><Button variant="outline-secondary" color="danger">CONTINUE SHOPPING</Button></Link>
-                            <Link to='/cart' style={{ textDecoration: "none" }}><Button variant="outline-secondary" color="danger">CheckOut</Button></Link></>
+                            <Link to='/'><Button  style={{ margin: "10px" }} variant="outline-secondary" color="danger" >CONTINUE SHOPPING</Button></Link>
+                            <Link to='/cart' style={{ textDecoration: "none" }}><Button  style={{ margin: "10px" }} variant="outline-secondary" color="danger">CheckOut</Button></Link></>
                     }
                 </div>
             </div>

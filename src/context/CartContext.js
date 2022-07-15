@@ -6,7 +6,16 @@ export const CartContext = createContext();
 const { Provider } = CartContext;
 
 export const MyProvider = ({ children }) => {
-    const [cart, setCart] = useState([])
+    //const [cart, setCart] = useState([])//este es el original
+
+
+    ////////prueba de local agreugue estooooooooooo
+    const [cart, setCart] = useState(JSON.parse(localStorage.getItem('items')) ?? []);
+
+    useEffect(() => {
+            localStorage.setItem('items', JSON.stringify(cart));
+      }, [cart]);
+
 
     //METODO SOME, EN ITEM DETAIL, BOLEANO, DETECTA SI EL PROD YA ESTA EN EL CART
     const isInCart = (id) => {
@@ -57,6 +66,8 @@ export const MyProvider = ({ children }) => {
         return cart.reduce((acc, item) => acc += item.price * item.qty, 0);
     }
 
+
+    
     //CALCULOS
     const calcTotalPerItem = (id) => {
         let index = cart.map(item => item.id).indexOf(id);
