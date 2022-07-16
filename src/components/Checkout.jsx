@@ -15,7 +15,7 @@ export default function Checkout() {
     }, [])
 
 
-    const { cart, getItemPrice, emptyCart, notifyError } = useContext(CartContext)
+    const { cart, getItemPrice, emptyCart, calcTaxes, calcTotal, calcSubTotal } = useContext(CartContext)
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -101,6 +101,7 @@ export default function Checkout() {
                     <h4 className="checkout-title">Thanks for buying!</h4>
                     <div>
                         <br />
+                        
                         <strong>Your order id is:</strong> <b>{idBuy}</b>
                     </div>
                     <br />
@@ -114,15 +115,17 @@ export default function Checkout() {
 
 
                         <p>Cellphone: <b>{cel}</b></p>
+
+
                     </div>
 
                     <h6>We´ll contact you to deliver your order!</h6>
-                    <Link to="/"><Button style={{ margin: "10px" }} variant="outline-secondary" color="danger" onClick={emptyCart} >Return to home</Button></Link>
+                    <p>Your items: <b></b></p>
 
                 </div>
                 :
                 <>
-                    <b>Please fill this form so we can complete your purchase</b>
+                    <b>Please fill this form correctly so we can complete your purchase</b>
                     <div>
 
                         <div className="input-group mb-3">
@@ -150,6 +153,7 @@ export default function Checkout() {
 
                             <input onKeyUp={validateCel} onChange={(e) => setCel(e.target.value)} type="text" className="form-control" placeholder="Cellphone" aria-label="Username" aria-describedby="basic-addon1" />
                         </div>
+                        
                         {validation.cel ? <p className="validation">The number you entered is valid</p> : cel == "" ? "" : <p className="validationX">Please enter a valid cellphone number</p>}
 
                         <Button onClick={() => handleClick()} type="button" style={{ margin: "10px" }} variant="outline-secondary" color="danger">Finish purchase</Button>
@@ -158,6 +162,44 @@ export default function Checkout() {
                     </div>
                 </>
             }
-        </div>)
+
+<div className='containerCheckOut col2'>
+
+
+                <div className='cartContainerCheck'>
+                </div>
+
+                {cart.map(item => (
+                    <div key={item.id} className='cartContainerCheck lineCart'>
+                        <img className='imgProducto img-fluid' src={item.image} alt={"Producto1"} width="35px" />
+                        <p className='cantidadCart textCheckout'>{item.qty} x {item.name}</p>
+                        <p className='precioCart textCheckout'>Precio: ${item.price}</p>
+                        <p className='subtotalCart textCheckout'>Subtotal: ${item.price} x {item.qty}</p>
+                    </div>
+
+
+                ))}
+                <div className='lineCart'>
+                    <div className='spaceBet'>
+                        <b>Subtotal</b> <b>${getItemPrice()}</b>
+                    </div>
+                    <div className='spaceBet'>
+                        <b>Taxes</b> <b>${calcTaxes()}</b>
+                    </div>
+                </div>
+                <div className='lineCart spaceBet'>
+                    <b>Total</b> <b>${calcTotal()}</b>
+                </div>
+            </div>
+            <Link to="/"><Button style={{ margin: "10px" }} variant="outline-secondary" color="danger" onClick={emptyCart} >Return to home</Button></Link>
+
+        </div>
+
+
+
+
+
+
+        )
 }
 

@@ -19,7 +19,9 @@ export default function Cart() {
         <>
             <div className="cart-empty">
                 <br />
+                <br />
                 <h1>YOUR CART</h1>
+                <br />
                 <br />
 
 

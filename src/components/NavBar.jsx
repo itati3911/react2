@@ -26,16 +26,16 @@ function NavBar() {
             height="90"
             className="d-inline-block align-middle"
           />{' '}
-          <strong>Hathi Drink Shop</strong></Navbar.Brand>
+          <strong className="nav-linky">Hathi Drink Shop</strong></Navbar.Brand>
         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto nav-linky">
             <NavDropdown className="nav-linky" title="Beverages" id="basic-nav-dropdown">
-              <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/noalcohol'>NO ALCOHOL</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/wine'>WINES</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/liquor'>LIQUORS</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/gin'>GIN</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to='/category/vodka'>VODKA</NavDropdown.Item>
+              <NavDropdown.Item className="nav-linky" onClick={() => setExpanded(false)} as={Link} to='/category/noalcohol'>NO ALCOHOL</NavDropdown.Item>
+              <NavDropdown.Item className="nav-linky" onClick={() => setExpanded(false)} as={Link} to='/category/wine'>WINES</NavDropdown.Item>
+              <NavDropdown.Item className="nav-linky" onClick={() => setExpanded(false)} as={Link} to='/category/liquor'>LIQUORS</NavDropdown.Item>
+              <NavDropdown.Item className="nav-linky" onClick={() => setExpanded(false)} as={Link} to='/category/gin'>GIN</NavDropdown.Item>
+              <NavDropdown.Item className="nav-linky" onClick={() => setExpanded(false)} as={Link} to='/category/vodka'>VODKA</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className="nav-linky" onClick={() => setExpanded(false)} as={Link} to='/coming'>Barware</Nav.Link>
             <Nav.Link className="nav-linky" onClick={() => setExpanded(false)} as={Link} to='/coming'>Gifts</Nav.Link>

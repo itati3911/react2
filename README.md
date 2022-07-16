@@ -1,75 +1,83 @@
-<<<<<<< HEAD
-# react2
-ESTE ES EL REPO OFICIAL POST PRIMERA PREENTREGA DE DESAFIOS REACT
-=======
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+                   🍹HATHI DRINK SHOP 🍹
+                   
+This is the final project of the Coderhouse React JS course.
+It is deployed in Vercel so you can test it and see it run, the link is:                  
+            https://react2-jet.vercel.app/
+       
+                   
+🍹/////How to run the project
 
 In the project directory, you can run:
 
-### `npm start`
+            npm start           
+                   
+Run the app in development mode.
+Open (http://localhost:3000) to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🍹/////Build
 
-### `npm test`
+This project is made with React JS. The database used is from Firebase (https://firebase.google.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+🍹/////Libraries
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React-bootstrap: Bootstrap components used for layout and styling (React-Bootstrap Documentation
+https://react-bootstrap.github.io)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React-router-dom: Provides dynamic routing in this project (https://v5.reactrouter.com/web/guides/quick-start)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+SweetAlert: customized alerts (items in cart, etc) (https://sweetalert2.github.io/)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🍹/////Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Mail: itati3911@gmail.com
+Github: https://github.com/itati3911
+Linkedin: https://www.linkedin.com/in/bon-vivant/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Let´s get in touch!!!
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+/////////////////////////////////////////////////////////////
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+                   🍹HATHI DRINK SHOP 🍹
 
-### Code Splitting
+Este es el proyecto final de la cursada de React JS de Coderhouse.
+Está deployado en Vercel para que puedas probarlo y verlo correr, el link es:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+            https://react2-jet.vercel.app/
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🍹/////Cómo correr el proyecto
 
-### Making a Progressive Web App
+En el directorio del proyecto, puede ejecutar:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+            npm start
 
-### Advanced Configuration
+Ejecuta la aplicación en el modo de desarrollo.
+Abra (http://localhost:3000) para verlo en su navegador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🍹/////Build
 
-### Deployment
+Este proyecto está realizado con React JS. La base de datos utilizada es de Firebase (https://firebase.google.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🍹/////Librerías
 
-### `npm run build` fails to minify
+React-bootstrap: se utilizaron componentes de Bootstrap para layout y estilos (React-Bootstrap Documentation
+https://react-bootstrap.github.io)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 57ea996 (Initialize project using Create React App)
+React-router-dom: aporta routing dinámico en este proyecto (https://v5.reactrouter.com/web/guides/quick-start)
+
+SweetAlert: se personalizaron alertas (items en carrito, etc) (https://sweetalert2.github.io/)
+
+🍹/////Contacto
+
+Mail: itati3911@gmail.com
+Github: https://github.com/itati3911
+Linkedin: https://www.linkedin.com/in/bon-vivant/
+
+Espero tu mensaje!!!
