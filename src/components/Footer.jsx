@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import "../style/Footer.css";
 
 
 export default function Footer() {
+
+    //to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
 
@@ -50,7 +55,7 @@ export default function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-8 col-sm-6 col-xs-12">
-                        <Link to="https://www.linkedin.com/in/bon-vivant/" target="_blank"  className="copyright-text"><p>Copyright &copy; 2022 All Rights Reserved by MIR
+                        <Link to="https://www.linkedin.com/in/bon-vivant/" target="_blank" className="copyright-text"><p>Copyright &copy; 2022 All Rights Reserved by MIR
                         </p></Link>
                     </div>
 

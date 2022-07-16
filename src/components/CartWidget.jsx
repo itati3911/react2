@@ -1,10 +1,15 @@
 import React from "react"
 import { CartContext } from "../context/CartContext";
-import { useContext, getItemQty } from "react";
+import { useContext, useEffect } from "react";
 import "../App.css"
 
 
 function CartWidget() {
+
+    //to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const { getItemQty } = useContext(CartContext);
     return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 
 const Qty = ({ stock = 0, initial = 1, onAdd }) => {
@@ -21,15 +21,21 @@ const Qty = ({ stock = 0, initial = 1, onAdd }) => {
         }
     }
 
+
+    //to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
-            
+
             <div>
                 <Button style={{ margin: "10px" }} size="sm" variant="outline-secondary" color="danger" onClick={decrement}>-</Button>
-                {qty}         
+                {qty}
                 <Button style={{ margin: "10px" }} size="sm" variant="outline-secondary" color="danger" onClick={increment}>+</Button>
             </div>
-            <br/>
+            <br />
             {
                 stock && qty
                     ? <Button style={{ margin: "10px" }} variant="outline-secondary" color="danger" onClick={() => { onAdd(qty) }}>Add to cart</Button>

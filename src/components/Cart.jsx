@@ -10,10 +10,15 @@ import "../style/Cart.css"
 export default function Cart() {
     const test = useContext(CartContext);
 
+    //to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <div className="cart-empty">
-                <br/>
+                <br />
                 <h1>YOUR CART</h1>
                 <br />
 
@@ -86,8 +91,7 @@ export default function Cart() {
                     <Link to='/checkout'><Button style={{ margin: "10px" }} variant="outline-secondary" color="danger">PROCEED TO CHECKOUT</Button></Link>
                 </div>
             }
+
         </>
-    
     )
-  }
-  
+}

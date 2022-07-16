@@ -1,9 +1,16 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Item from "./Item"
 import "../style/ItemListContainer.css"
 
 
 const ItemList = ({ items }) => {
+
+    //to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+
     return (
         <div className="containerList">
             {

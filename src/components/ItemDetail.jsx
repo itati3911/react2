@@ -1,7 +1,7 @@
 import React from "react"
 import { Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
 import Swal from 'sweetalert2';
@@ -16,20 +16,26 @@ export default function ItemDetail({ item }) {
     const { isInCart, addItem } = useContext(CartContext);
 
     const onAdd = (qty) => {
-       
+
         Swal.fire({
             position: 'top-end',
             icon: 'success',
             title: 'Your product has been saved to your cart!',
             showConfirmButton: false,
             timer: 1500
-          })
+        })
 
         isInCart(item.id);
         addItem(item, qty);
         setQty(qty);
 
     }
+
+
+    //to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
 
@@ -45,16 +51,16 @@ export default function ItemDetail({ item }) {
                 <div>
 
                     {qty === 1
-                        ? 
+                        ?
                         <>
-                        <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
-                        <Link to='/'><Button variant="outline-secondary" color="danger">CONTINUE SHOPPING</Button></Link>
+                            <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
+                            <Link to='/'><Button style={{ margin: "10px" }} variant="outline-secondary" color="danger">CONTINUE SHOPPING</Button></Link>
                         </>
                         :
                         <>
                             <ItemCount stock={item.stock} inicial={qty} onAdd={onAdd} />
-                            <Link to='/'><Button  style={{ margin: "10px" }} variant="outline-secondary" color="danger" >CONTINUE SHOPPING</Button></Link>
-                            <Link to='/cart' style={{ textDecoration: "none" }}><Button  style={{ margin: "10px" }} variant="outline-secondary" color="danger">CheckOut</Button></Link></>
+                            <Link to='/'><Button style={{ margin: "10px" }} variant="outline-secondary" color="danger" >CONTINUE SHOPPING</Button></Link>
+                            <Link to='/cart' style={{ textDecoration: "none" }}><Button style={{ margin: "10px" }} variant="outline-secondary" color="danger">CheckOut</Button></Link></>
                     }
                 </div>
             </div>

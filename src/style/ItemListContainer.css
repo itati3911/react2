@@ -1,23 +1,23 @@
 * {
-    margin:0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
-.containerList{
-    display: flex;
-  align-items:center;
+.containerList {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 75vh;
   margin-bottom: 25px;
-} 
+}
 
-.spinning{
-    
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.spinning {
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

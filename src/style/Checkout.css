@@ -1,6 +1,14 @@
-.checkout-form{
+.checkout-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

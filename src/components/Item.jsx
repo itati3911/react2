@@ -1,12 +1,18 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
 export default function Item({ id, title, price, image }) {
+
+  //to top
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div>
-      <Card style={{ width: '200px', heigth:"300px", margin: "20px", border:"2px solid grey"}}>
+      <Card style={{ width: '200px', heigth: "300px", margin: "20px", border: "2px solid grey" }}>
 
         <Card.Img variant="top" src={image} />
 

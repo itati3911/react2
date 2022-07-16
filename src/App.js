@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MyProvider } from './context/CartContext';
 import { initializeApp } from "firebase/app";
 import Footer from "./components/Footer"
-//import Soon from "./components/Soon"
+import Coming from "./components/Coming"
 
 
 
@@ -39,7 +39,7 @@ initializeApp(firebaseConfig);
           <Route path='/item/:id' element={<ItemDetailContainer />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
-          {/* <Route path='/soon' element={<Soon />} /> */}
+          <Route path='/coming' element={<Coming />} /> 
         </Routes>
         <Footer/>
       </MyProvider>
