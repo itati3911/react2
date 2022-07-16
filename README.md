@@ -5,7 +5,7 @@
 This is the final project of the Coderhouse React JS course.
 Here´s a sneak peek:
 
-          ![](gif-hathi.gif)
+          ![](https://github.com/itati3911/react2/blob/main/gif-hathi.gif)
 
 
 
