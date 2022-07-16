@@ -4,7 +4,8 @@
                    
 This is the final project of the Coderhouse React JS course.
 It is deployed in Vercel so you can test it and see it run, the link is:                  
-            https://react2-8ajuve17n-itati3911.vercel.app/
+           
+           https://react2-itati3911.vercel.app/
        
                    
 🍹/////How to run the project
@@ -49,7 +50,7 @@ Let´s get in touch!!!
 Este es el proyecto final de la cursada de React JS de Coderhouse.
 Está deployado en Vercel para que puedas probarlo y verlo correr, el link es:
 
-           https://react2-8ajuve17n-itati3911.vercel.app/
+            https://react2-itati3911.vercel.app/
 
 
 🍹/////Cómo correr el proyecto
