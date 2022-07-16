@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import { CartContext } from "../context/CartContext";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
 import "../style/Checkout.css"
 
 
@@ -77,13 +78,14 @@ export default function Checkout() {
                     setOrderId(id);
 
                     emptyCart();
-                    alert("your order id is" + id)
+                    Swal.fire("Your order id is " +id)
+                    
 
 
 
                 })
         } else {
-            alert("Please fill the form so we can complete your purchase")
+            Swal.fire("Please fill this form so we can complete your purchase")
         }
     }
 

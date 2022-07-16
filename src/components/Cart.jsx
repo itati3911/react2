@@ -43,7 +43,7 @@ export default function Cart() {
                             <Table responsive striped bordered hover>
                                 <thead>
                                     <tr className="columns">
-                                        <th className="columns">Img</th>
+                                        <th className="columns">Image</th>
                                         <th className="columns">Product</th>
                                         <th className="columns">Quantity</th>
                                         <th className="columns">Price</th>

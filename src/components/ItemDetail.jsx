@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
+import Swal from 'sweetalert2';
 import "../style/ItemDetail.css"
 
 
@@ -15,7 +16,14 @@ export default function ItemDetail({ item }) {
     const { isInCart, addItem } = useContext(CartContext);
 
     const onAdd = (qty) => {
-        alert("You have selected " + qty + " items.");
+        /* alert("You have selected " + qty + " items."); */
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your product has been saved to your cart!',
+            showConfirmButton: false,
+            timer: 1500
+          })
 
         isInCart(item.id);
         addItem(item, qty);
