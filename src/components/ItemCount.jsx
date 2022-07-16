@@ -25,9 +25,9 @@ const Qty = ({ stock = 0, initial = 1, onAdd }) => {
         <>
             
             <div>
-                <Button style={{ margin: "10px" }} size="sm" variant="outline-secondary" color="danger" onClick={increment}>+</Button>
-                {qty}         
                 <Button style={{ margin: "10px" }} size="sm" variant="outline-secondary" color="danger" onClick={decrement}>-</Button>
+                {qty}         
+                <Button style={{ margin: "10px" }} size="sm" variant="outline-secondary" color="danger" onClick={increment}>+</Button>
             </div>
             <br/>
             {

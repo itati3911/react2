@@ -16,7 +16,7 @@ export default function ItemDetail({ item }) {
     const { isInCart, addItem } = useContext(CartContext);
 
     const onAdd = (qty) => {
-        /* alert("You have selected " + qty + " items."); */
+       
         Swal.fire({
             position: 'top-end',
             icon: 'success',
