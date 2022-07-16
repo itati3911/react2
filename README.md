@@ -3,9 +3,22 @@
                    🍹HATHI DRINK SHOP 🍹
                    
 This is the final project of the Coderhouse React JS course.
+Here´s a sneak peek:
+
+          ![](gif-hathi.gif)
+
+
+
+
+
+
+
+
+
 It is deployed in Vercel so you can test it and see it run, the link is:                  
            
            https://react2-itati3911.vercel.app/
+           
        
                    
 🍹/////How to run the project
