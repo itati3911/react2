@@ -5,15 +5,19 @@ REACT JS FINAL PROJECT
 🍹HATHI DRINK SHOP 🍹
                    
 This is the final project of the Coderhouse React JS course.
-It is deployed in Vercel so you can test it and see it run, the link is:                  
-            
-            (https://react2-jet.vercel.app/)
+It is deployed in Vercel so you can test it and see it run, the link is:   
+
+                      (https://react2-jet.vercel.app/)
+        
+          
 
 
-You can have a sneak peek here:
+You can have a sneak peek here: 
+
+(https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=)
 
 
-           (https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=)
+     
        
 
 The file is in this repo as: gif-hathi.gif
