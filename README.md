@@ -48,7 +48,9 @@ SweetAlert: customized alerts (items in cart, etc) (https://sweetalert2.github.i
 🍹/////Contact
 
 Mail: itati3911@gmail.com
+
 Github: https://github.com/itati3911
+
 Linkedin: https://www.linkedin.com/in/bon-vivant/
 
 Let´s get in touch!!!
@@ -98,7 +100,9 @@ SweetAlert: se personalizaron alertas (items en carrito, etc) (https://sweetaler
 🍹/////Contacto
 
 Mail: itati3911@gmail.com
+
 Github: https://github.com/itati3911
+
 Linkedin: https://www.linkedin.com/in/bon-vivant/
 
 Espero tu mensaje!!!
