@@ -15,7 +15,7 @@ It is deployed in Vercel so you can test it and see it run, the link is:
 
 You can have a sneak peek here: 
 
-(https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=)
+(https://video-private-assets.canva.com/VAFGrRoF6yo/v/bc818af1fe.mp4?exp=1658073300000&cf-ck=C3-BdLaMl_Dcti6uGuSJCeEzKnBpvhRzGwIlmoMkMYE&cf-sig=UrSGkqJtMSbtqs3XQqfmk-Wg7LsLJPP6L9WgG6iWD1Q&cf-sig-kid=CO7cCjZ_YiI=&sig=5301WTyXeFOeMb9HUE4mg5rWRzZaE-AKEpoLJuyTchs&sig-kid=GzFgFdhXD-Q=)
 
 
      
@@ -75,7 +75,7 @@ Está deployado en Vercel para que puedas probarlo y verlo correr, el link es:
 
 Podés tener un adelanto acá: 
 
-(https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=)
+(https://video-private-assets.canva.com/VAFGrRoF6yo/v/bc818af1fe.mp4?exp=1658073300000&cf-ck=C3-BdLaMl_Dcti6uGuSJCeEzKnBpvhRzGwIlmoMkMYE&cf-sig=UrSGkqJtMSbtqs3XQqfmk-Wg7LsLJPP6L9WgG6iWD1Q&cf-sig-kid=CO7cCjZ_YiI=&sig=5301WTyXeFOeMb9HUE4mg5rWRzZaE-AKEpoLJuyTchs&sig-kid=GzFgFdhXD-Q=)
 
 
 
