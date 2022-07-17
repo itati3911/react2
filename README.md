@@ -5,12 +5,7 @@
 This is the final project of the Coderhouse React JS course.
 Here´s a sneak peek:
 
-          ![](https://github.com/itati3911/react2/blob/main/gif-hathi.gif)
-
-
-
-
-
+          https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=
 
 
 
@@ -64,6 +59,11 @@ Este es el proyecto final de la cursada de React JS de Coderhouse.
 Está deployado en Vercel para que puedas probarlo y verlo correr, el link es:
 
             https://react2-itati3911.vercel.app/
+            
+            
+Podés ver un adelanto en:
+
+          https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=
 
 
 🍹/////Cómo correr el proyecto
