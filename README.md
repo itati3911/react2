@@ -5,10 +5,11 @@ REACT JS FINAL PROJECT
 🍹HATHI DRINK SHOP 🍹
                    
 This is the final project of the Coderhouse React JS course.
-It is deployed in Vercel so you can test it and see it run, the link is:   
+It is deployed in Vercel so you can test it and see it run, the link is:     
 
-                      (https://react2-jet.vercel.app/)
-        
+
+
+(https://react2-jet.vercel.app/)       
           
 
 
@@ -66,15 +67,17 @@ Let´s get in touch!!!
                    🍹HATHI DRINK SHOP 🍹
 
 Este es el proyecto final de la cursada de React JS de Coderhouse.
-Está deployado en Vercel para que puedas probarlo y verlo correr, el link es:
-
-            (https://react2-jet.vercel.app/)
+Está deployado en Vercel para que puedas probarlo y verlo correr, el link es: 
 
 
-Podés tener un adelanto acá:
+(https://react2-jet.vercel.app/)        
 
 
-            (https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=)
+Podés tener un adelanto acá: 
+
+(https://video-private-assets.canva.com/VAFGrRoF6yo/v/70fd6fc3f6.mp4?exp=1658073300000&cf-ck=GdLGaf8Dv20DFjt3wRpm_OXzoW2t3rShx9VssBCspm0&cf-sig=8__1hc_8qb2IOr-5MCtFkcy6zhmuP377EWQtqD0mJts&cf-sig-kid=CO7cCjZ_YiI=&sig=89snMwg42eqoTPmSYx-Wvlk7aJDnsWRDoVhmr03vaTg&sig-kid=GzFgFdhXD-Q=)
+
+
 
 En el repo el archivo está bajo el nombre: gif-hathi.gif
 
